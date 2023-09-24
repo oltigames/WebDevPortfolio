@@ -1,0 +1,9 @@
+#parent {
+  display: grid;
+  place-items: center;
+  padding-top: 100px;
+}
+
+#clock {
+  font-size: 40px;
+}
