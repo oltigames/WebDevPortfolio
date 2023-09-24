@@ -1,0 +1,22 @@
+#parent {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: auto;
+  place-content: center;
+  gap: 40px;
+  padding-top: 30px;
+}
+
+.item {
+  display: grid;
+  place-content: center;
+  border: 1px solid skyblue;
+  font-size: 70px;
+}
+
+#input {
+  display: grid;
+  place-content: center;
+  border: 1px solid skyblue;
+  font-size: 70px;
+}
