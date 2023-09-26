@@ -1,12 +1,8 @@
-const date = new Date();
-var clock = document.getElementById("clock");
-const update = () => {
-  clock.innerHTML = date;
+let date = new Date();
+let clock = document.getElementById("clock");
+let update = () => {
+  console.log("update");
+  let date = new Date();
 };
-
-function updateClock() {
-  if (!creier) {
-    creier = setInterval(update, 1000);
-  }
-}
-updateClock();
+update();
+setInterval(update(), 1000);
