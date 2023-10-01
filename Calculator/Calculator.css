@@ -1,0 +1,43 @@
+#value {
+  grid-area: value;
+}
+
+#AC {
+  grid-area: AC;
+}
+#equal {
+  grid-area: equal;
+}
+body {
+  display: grid;
+  place-content: center;
+}
+#calculator {
+  display: grid;
+  place-content: center;
+  gap: 20px;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "value value value value"
+    "AC AC . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". .  equal equal";
+  padding: 50px;
+  /* grid-template:
+    "value value value value" 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr
+    "AC AC . ." 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr
+    ". . . ." 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr
+    ". . . ." 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr
+    ". . . ." 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr
+    ". . equal equal" 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr; */
+}
+
+.item {
+  display: grid;
+  text-align: center;
+  background-color: aqua;
+  font-size: 90px;
+}
