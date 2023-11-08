@@ -12,22 +12,22 @@
       <div class="item" id="value">0</div>
       <div class="item" id="AC" onclick="deleteAll()">AC</div>
       <div class="item" onclick="deleteThis()">DEL</div>
-      <div class="item" onclick="add(÷)">÷</div>
-      <div class="item" onclick="add(1)">1</div>
-      <div class="item" onclick="add(2)">2</div>
-      <div class="item" onclick="add(3)">3</div>
-      <div class="item" onclick="add(*)">*</div>
-      <div class="item" onclick="add(4)">4</div>
-      <div class="item" onclick="add(5)">5</div>
-      <div class="item" onclick="add(6)">6</div>
-      <div class="item" onclick="add(+)">+</div>
-      <div class="item" onclick="add(7)">7</div>
-      <div class="item" onclick="add(8)">8</div>
-      <div class="item" onclick="add(9)">9</div>
-      <div class="item" onclick="add(-)">-</div>
-      <div class="item" onclick="add(.)">.</div>
-      <div class="item" onclick="add(0)">0</div>
-      <div class="item" id="equal" onclick="update()">=</div>
+      <div class="item" onclick="operation('÷'); add('÷')">÷</div>
+      <div class="item" onclick='add("1")'>1</div>
+      <div class="item" onclick='add("2")'>2</div>
+      <div class="item" onclick="add('3')">3</div>
+      <div class="item" onclick="operation('*'); add('*')">*</div>
+      <div class="item" onclick="add('4')">4</div>
+      <div class="item" onclick="add('5')">5</div>
+      <div class="item" onclick="add('6')">6</div>
+      <div class="item" onclick="operation('+'); add('+')">+</div>
+      <div class="item" onclick="add('7')">7</div>
+      <div class="item" onclick="add('8')">8</div>
+      <div class="item" onclick="add('9')">9</div>
+      <div class="item" onclick="operation('-'); add('-')">-</div>
+      <div class="item" onclick="add('.')">.</div>
+      <div class="item" onclick="add('0')">0</div>
+      <div class="item" id="equal" onclick="operation('=')">=</div>
     </div>
     <script src="Calculator.js"></script>
   </body>
