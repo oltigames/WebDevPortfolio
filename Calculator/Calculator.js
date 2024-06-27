@@ -12,14 +12,21 @@ const add = (p) => {
   document.getElementById("value").innerHTML = value;
 };
 
+//! only deletes the last written character
+
 const deleteThis = () => {
   value = value.slice(0, value.length - 1);
   document.getElementById("value").innerHTML = value;
 };
+
+//! deletes everything in the calculator; acts as a CLEAR button
+
 const deleteAll = () => {
   value = "";
   document.getElementById("value").innerHTML = value;
 };
+
+//! updates the value in the web page
 
 const update = () => {
   value;
@@ -35,8 +42,10 @@ const update = () => {
 //   return leftValue + rightValue;
 // }
 // const evaluateExpression = () => {
-//   //find first + or - and split
+//// find first + or - and split
 // };
+
+// ! function identifies operator and changes value accordingly
 
 const operation = (i) => {
   if (i != "=") {
@@ -78,5 +87,3 @@ const operation = (i) => {
     }
   }
 };
-
-// only addition works
